@@ -361,7 +361,7 @@
                 <li class="divider"></li>
 
                 <li>
-                  <a href="#">
+                  <a v-on:click="logout()" href="#">
                     <i class="ace-icon fa fa-power-off"></i>
                     退出登录
                   </a>
@@ -451,19 +451,19 @@
 
             <ul class="submenu">
               <li class="">
-                <a href="tables.html">
-                  <i class="menu-icon fa fa-caret-right"></i>
-                  Simple &amp; Dynamic
-                </a>
+                  <router-link to="/book/borrow">
+                    <i class="menu-icon fa fa-caret-right"></i>
+                    图书借阅
+                   </router-link>
 
                 <b class="arrow"></b>
               </li>
 
               <li class="">
-                <a href="jqgrid.html">
+               <router-link to="/book/return">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  jqGrid plugin
-                </a>
+                  图书归还
+               </router-link>
 
                 <b class="arrow"></b>
               </li>
@@ -482,19 +482,19 @@
 
             <ul class="submenu">
               <li class="">
-                <a href="tables.html">
+                <router-link to="/book/manager">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  Simple &amp; Dynamic
-                </a>
+                  管理员
+                </router-link>
 
                 <b class="arrow"></b>
               </li>
 
               <li class="">
-                <a href="jqgrid.html">
+                <router-link to="/book/user">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  jqGrid plugin
-                </a>
+                  用户
+                </router-link>
 
                 <b class="arrow"></b>
               </li>
@@ -513,22 +513,14 @@
 
             <ul class="submenu">
               <li class="">
-                <a href="tables.html">
+                <router-link to="/book/usermessage">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  Simple &amp; Dynamic
-                </a>
+                  读者评论
+                </router-link>
 
                 <b class="arrow"></b>
               </li>
 
-              <li class="">
-                <a href="jqgrid.html">
-                  <i class="menu-icon fa fa-caret-right"></i>
-                  jqGrid plugin
-                </a>
-
-                <b class="arrow"></b>
-              </li>
             </ul>
           </li>
           <!-- 图书类别管理 -->
@@ -544,22 +536,14 @@
 
             <ul class="submenu">
               <li class="">
-                <a href="tables.html">
+                <router-link to="/book/sort">
                   <i class="menu-icon fa fa-caret-right"></i>
-                  Simple &amp; Dynamic
-                </a>
+                  图书类别
+                </router-link>
 
                 <b class="arrow"></b>
               </li>
 
-              <li class="">
-                <a href="jqgrid.html">
-                  <i class="menu-icon fa fa-caret-right"></i>
-                  jqGrid plugin
-                </a>
-
-                <b class="arrow"></b>
-              </li>
             </ul>
           </li>
         </ul>

@@ -4,10 +4,12 @@ import Login from './views/Login'
 import Admin from './views/Admin'
 import Welcome from './views/Admin/Welcome'
 import BookDetial from './views/Admin/BookDetail'
-import BookModify from './views/Admin/BookModify'
+import BookBorrow from './views/Admin/BookBorrow'
 import BookSort from './views/Admin/BookSort'
 import User from './views/Admin/User'
 import UserMessage from './views/Admin/UserMessage'
+import BookReturn from './views/Admin/BookReturn'
+import Manager from './views/Admin/Manager'
 
 const routes = [
   {path: '',redirect: '/login'},
@@ -15,11 +17,13 @@ const routes = [
   {path:'/admin',name: "admin",component:Admin,
     children: [
       {path:'/book/welcome',name: 'welcome',component:Welcome},
-      {path:'/book/detail',name: 'welcome',component:BookDetial},
-      {path:'/book/modify',name: 'welcome',component:BookModify},
-      {path:'/book/sort',name: 'welcome',component:BookSort},
-      {path:'/book/user',name: 'welcome',component:User},
-      {path:'/book/usermessage',name: 'welcome',component:UserMessage},
+      {path:'/book/detail',name: 'detail',component:BookDetial},
+      {path:'/book/borrow',name: 'borrow',component:BookBorrow},
+      {path:'/book/sort',name: 'sort',component:BookSort},
+      {path:'/book/user',name: 'user',component:User},
+      {path:'/book/usermessage',name: 'usermessage',component:UserMessage},
+      {path:'/book/return',name: 'return',component:BookReturn},
+      {path:'/book/manager',name: 'manager',component:Manager},
   ]
 },
 ]

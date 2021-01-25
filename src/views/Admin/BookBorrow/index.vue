@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      <button v-on:click="add()" class="btn btn-white btn-default btn-round">
+      <button class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-edit"></i>
         新增
       </button>
@@ -421,10 +421,5 @@
 import Pagination from '../../../components/pagination';
 export default {
   components: { Pagination },
-  methods: {
-    add() {
-      $("#form-modal").modal("show");
-    } 
-  },
 }
 </script>

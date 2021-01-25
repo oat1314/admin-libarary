@@ -45,7 +45,7 @@
 
                         <div class="clearfix">
                          
-                          <button type="button"
+                          <button v-on:click="login()" type="button"
                                   class="width-35 pull-right btn btn-sm btn-primary"
                                   >
                             <i class="ace-icon fa fa-key"></i>
@@ -88,6 +88,12 @@ export default {
       $("body").attr("class", "login-layout light-login");
       // console.log("login");
     },
+    methods: {
+      login () {
+        let _this = this;
+        _this.$router.push('/book/welcome')
+      }
+    }
 }
 </script>
 
